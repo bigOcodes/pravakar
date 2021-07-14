@@ -1,0 +1,156 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+.container .head-title{
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+}
+
+.head-title .user-name{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.head-title .portfolio-name{
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.photo-gallery{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: auto;
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+
+.pic-sheet{
+    margin: auto;
+    width: min-content;
+}
+
+.img-card{
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.figure{
+    overflow: hidden;
+    height: fit-content;
+}
+
+.img-box{
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.img-card:hover .img-box{
+    transform: scale(1.1);
+}
+
+.text-box .image-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.entry-meta{
+    background-color: black;
+    padding: 6px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.date{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+@media (min-width: 1344px) and (max-width: 1758px) {
+    .photo-gallery{
+        column-count: 3;
+    }
+}
+
+@media (min-width: 934px) and (max-width: 1344px) {
+    .photo-gallery{
+        column-count: 2;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 934px) {
+    .photo-gallery{
+        column-count: 1;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .head-title .user-name{
+        font-size: 1rem;
+    }
+
+    .head-title .portfolio-name{
+        font-size: .7rem;
+    }
+
+    .img-card{
+        width: 300px;
+    }
+
+    .text-box .image-title{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 360px){
+    .img-card{
+        width: 200px;
+    }
+
+    .photo-gallery{
+        column-count: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text-box .image-title{
+        font-size: 1rem;
+    }
+
+    .head-title .user-name{
+        font-size: .8rem;
+    }
+    
+    .head-title .portfolio-name{
+        font-size: .5rem;
+    }
+
+    .container .head-title{
+        margin: 10px;
+    }
+}
+
+
+
+
+
