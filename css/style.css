@@ -1,5 +1,6 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
@@ -11,12 +12,14 @@
     text-align: center;
     margin: 50px;
     padding: 10px;
+    margin-bottom: 150px;
 }
 
 .head-title .user-name{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: 2px;
+    margin: 50px;
 }
 
 .head-title .portfolio-name{
@@ -24,7 +27,53 @@
     letter-spacing: 5px;
 }
 
+.head-title .meta-data-portfolio{
+    font-size: 15px;
+    color: gray;
+}
+
+.about-me{
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.about-title{
+    margin: 50px;
+}
+
+.about-me span{
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.about-me p{
+    margin: 30px auto;
+    font-size: 15px;
+    color: gray;
+    width: 50%;
+}
+
+.about-me .user-profile-pic{
+    width: 150px;
+    /* border: 2px solid black; */
+    border-radius: 150px;
+}
+
+.portfolio-title{
+    text-align: center;
+    margin: 50px;
+}
+
+.portfolio-title span{
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
 .photo-gallery{
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
     width: auto;
@@ -39,12 +88,12 @@
 }
 
 .img-card{
-    display: inline-block;
     position: relative;
     margin: auto;
     width: 400px;
     margin-bottom: 25px;
     overflow: hidden;
+    display: inline-block;
 }
 
 .figure{
@@ -86,6 +135,83 @@
     text-transform: uppercase;
 }
 
+.footer{
+    text-align: center;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+.footer p span{
+    color: tomato;
+}
+
+/* .show{
+    display: block;
+}
+
+.myBtnContainer{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background-color: bisque;
+}
+
+.btn.active{
+    background-color: rgb(130, 95, 53);
+    color: white;
+} */
+
+/* .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalImage{
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 60%;
+    max-width: 700px;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+} */
+
 @media (min-width: 1344px) and (max-width: 1758px) {
     .photo-gallery{
         column-count: 3;
@@ -106,7 +232,7 @@
     }
 
     .head-title .user-name{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .head-title .portfolio-name{
@@ -120,6 +246,10 @@
     .text-box .image-title{
         font-size: 1.4rem;
     }
+
+    /* .modalImage{
+        width: 100%;
+    } */
 }
 
 @media (max-width: 360px){
@@ -134,7 +264,7 @@
     }
 
     .text-box .image-title{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .head-title .user-name{
@@ -149,7 +279,6 @@
         margin: 10px;
     }
 }
-
 
 
 
